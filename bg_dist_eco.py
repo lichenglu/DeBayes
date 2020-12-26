@@ -4,7 +4,7 @@
 
 
 import numpy as np
-from bg_dist import BgDist, newton_optimization, Lambdas, RowDegreeLambdas, ColumnDegreeLambdas, LambdasAggregator
+from .bg_dist import BgDist, newton_optimization, Lambdas, RowDegreeLambdas, ColumnDegreeLambdas, LambdasAggregator
 
 
 class BgDistDegreeEco(BgDist):

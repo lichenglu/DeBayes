@@ -9,8 +9,8 @@ import pickle
 from natsort import natsorted
 from os.path import join, abspath, dirname
 
-from CNE_modified import ConditionalNetworkEmbedding
-from bg_dist import BgDistBuilder
+from .CNE_modified import ConditionalNetworkEmbedding
+from .bg_dist import BgDistBuilder
 
 
 class DeBayes:
@@ -228,3 +228,6 @@ class DeBayes:
     def filename(self):
         return self.__class__.__name__ + "_trp_" + self.__training_bg_dist.string_code() + "_evp_" + \
                self.__eval_bg_dist.string_code()
+
+    def get_G(self):
+        return self.__G

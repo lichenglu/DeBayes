@@ -19,7 +19,7 @@ class BgDistBuilder:
             return BgDistDensity()
 
         if prior_type == 'degree':
-            from bg_dist_eco import BgDistDegreeEco
+            from .bg_dist_eco import BgDistDegreeEco
             return BgDistDegreeEco()
 
         if prior_type == 'biased_degree':
